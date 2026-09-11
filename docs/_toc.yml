@@ -1,0 +1,20 @@
+# Rutas relativas a la raíz del repositorio (fuente del libro).
+format: jb-book
+root: docs/informe
+parts:
+  - caption: Etapas del proyecto
+    chapters:
+      - file: docs/etapa0_estructura
+        title: "Etapa 0 · Estructura del proyecto"
+      - file: notebooks/1_model_leakage_demo
+        title: "Etapa 1 · EDA, preprocesamiento y data leakage"
+      - file: notebooks/2_model_pipeline_cv
+        title: "Etapa 2 · Entrenamiento seguro"
+      - file: docs/etapa3_api_docker
+        title: "Etapa 3 · API con FastAPI y Docker"
+      - file: docs/etapa4_kubernetes
+        title: "Etapa 4 · Kubernetes (Minikube)"
+      - file: docs/etapa5_ci
+        title: "Etapa 5 · Integración continua"
+      - file: docs/etapa6_monitoreo
+        title: "Etapa 6 · Monitoreo con Evidently"

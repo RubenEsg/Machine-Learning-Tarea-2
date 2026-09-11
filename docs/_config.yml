@@ -1,0 +1,35 @@
+# Jupyter Book 1.x, como en el tutorial del curso (jupyter-book build + ghp-import).
+# Construir desde la raíz del repositorio:
+#   jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml --path-output docs
+title: "Tarea 2 · Predicción de falla cardíaca con MLOps"
+author: "Valerie Martínez Pulido, Abrahan Basto Martínez y Rubén Esguerra Fernández"
+copyright: "2026"
+
+# Solo se publican las páginas del índice (_toc.yml); el resto del repositorio se ignora.
+only_build_toc_files: true
+exclude_patterns: [".venv", ".venv/**", "_build", "docs/_build", "**/.ipynb_checkpoints", ".pytest_cache"]
+
+# Los notebooks ya están ejecutados: el libro muestra sus salidas sin volver a correrlos.
+execute:
+  execute_notebooks: "off"
+
+repository:
+  url: https://github.com/RubenEsg/Machine-Learning-Tarea-2
+  path_to_book: ""
+  branch: main
+
+html:
+  use_repository_button: true
+  use_issues_button: false
+  use_edit_page_button: false
+
+# Botón para abrir y ejecutar los notebooks en Google Colab.
+launch_buttons:
+  notebook_interface: "classic"
+  colab_url: "https://colab.research.google.com"
+
+sphinx:
+  config:
+    language: es
+    # Los reportes de Evidently se publican tal cual junto al libro.
+    html_extra_path: ["drift_report.html", "monitoring/drift_particion_secuencial.html"]

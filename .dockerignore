@@ -1,0 +1,16 @@
+# La imagen solo necesita docker/requirements.txt y app/.
+# Excluir el resto acelera el build (el entorno .venv pesa cientos de MB).
+.git
+.github
+.venv
+.pytest_cache
+**/__pycache__
+**/.ipynb_checkpoints
+data
+notebooks
+monitoring
+k8s
+tests
+src
+*.html
+model.joblib

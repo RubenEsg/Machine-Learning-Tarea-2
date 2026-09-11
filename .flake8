@@ -1,0 +1,4 @@
+[flake8]
+# Longitud de línea por defecto de PEP 8 (79). Se excluyen carpetas que no
+# son código del proyecto por si flake8 se ejecuta desde la raíz.
+exclude = .git,.venv,__pycache__,.pytest_cache,.ipynb_checkpoints,notebooks

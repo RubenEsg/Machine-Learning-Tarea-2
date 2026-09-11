@@ -1,0 +1,16 @@
+# Entornos y cachés
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Compilación del Jupyter Book (se publica en la rama gh-pages con ghp-import)
+_build/
+docs/_build/
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

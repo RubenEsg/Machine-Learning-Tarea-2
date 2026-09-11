@@ -1,0 +1,52 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+          cache-dependency-path: docker/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r docker/requirements.txt
+          pip install flake8==7.3.0 pytest==9.1.1 httpx2==2.12.0
+
+      - name: Lint
+        run: flake8 app/ src/ tests/ monitoring/
+
+      - name: Tests
+        run: pytest tests/ -v
+
+  docker:
+    # Construye la imagen y hace una prueba de humo del contenedor.
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t heart-api -f docker/Dockerfile .
+
+      - name: Smoke test
+        run: |
+          docker run -d --name heart-api -p 8000:8000 heart-api
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8000/health && break
+            sleep 1
+          done
+          curl -sf -X POST http://localhost:8000/predict \
+            -H "Content-Type: application/json" \
+            -d '{"features": [54, "M", "ASY", 140, 239, 0, "Normal", 160, "N", 1.2, "Flat"]}'
+
+      - name: Container logs
+        if: always()
+        run: docker logs heart-api || true

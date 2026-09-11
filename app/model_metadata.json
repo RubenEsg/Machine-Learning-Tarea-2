@@ -1,0 +1,58 @@
+{
+  "modelo": "RandomForestClassifier",
+  "estimador": "RandomForestClassifier(max_depth=8, min_samples_leaf=3, n_estimators=300, random_state=42)",
+  "hiperparametros": {
+    "clf__max_depth": "8",
+    "clf__max_features": "sqrt",
+    "clf__min_samples_leaf": "3",
+    "scaler": "passthrough"
+  },
+  "entrenado": "2026-09-11T15:28:29",
+  "versiones": {
+    "python": "3.13.3",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "datos": {
+    "archivo": "data/heart.csv",
+    "filas": 918,
+    "sha256": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b"
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "estratificado_por": "HeartDisease",
+    "n_train": 734,
+    "n_test": 184,
+    "fingerprint": "6f866816e8c7"
+  },
+  "metricas": {
+    "cv_auc": 0.9312,
+    "cv_auc_std": 0.0251,
+    "cv_accuracy": 0.8515,
+    "nested_cv_auc": 0.9212,
+    "test_auc": 0.9284,
+    "test_auc_ic95": [
+      0.886,
+      0.9632
+    ],
+    "test_accuracy": 0.8913,
+    "test_sensibilidad": 0.9314,
+    "test_especificidad": 0.8415
+  },
+  "umbral": 0.5,
+  "features": [
+    "Age",
+    "Sex",
+    "ChestPainType",
+    "RestingBP",
+    "Cholesterol",
+    "FastingBS",
+    "RestingECG",
+    "MaxHR",
+    "ExerciseAngina",
+    "Oldpeak",
+    "ST_Slope"
+  ]
+}

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: heart-service
+spec:
+  selector:
+    app: heart-model
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  # En Minikube la IP externa aparece al ejecutar "minikube tunnel"
+  # (o se obtiene una URL con "minikube service heart-service --url").
+  type: LoadBalancer
