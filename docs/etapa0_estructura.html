@@ -435,7 +435,7 @@
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">monitoring/</span></code></strong>: el script de la etapa 6 para lotes nuevos de pacientes.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">docs/</span></code></strong>: el Jupyter Book con el informe.</p></li>
 </ul>
-<p>Los dos notebooks son <strong>autocontenidos</strong>: cada uno define sus funciones, descarga el dataset si no lo encuentra (verificando su huella SHA-256) e instala las librerías que falten, así que se pueden ejecutar fuera del repositorio o en Google Colab. Usan exactamente la misma partición de los datos, y el notebook 2 lo verifica con una huella de los índices de prueba.</p>
+<p>Los dos notebooks son <strong>autocontenidos</strong>: cada uno define sus funciones, descarga el dataset si no lo encuentra (verificando su huella SHA-256) e instala las librerías que falten, así que se pueden ejecutar fuera del repositorio. Usan exactamente la misma partición de los datos, y el notebook 2 lo verifica con una huella de los índices de prueba.</p>
 <section id="flujo-del-proyecto">
 <h2>Flujo del proyecto<a class="headerlink" href="#flujo-del-proyecto" title="Link to this heading">#</a></h2>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>data/heart.csv ──► notebooks 1 y 2 (EDA, leakage, GridSearchCV) ──► app/model.joblib

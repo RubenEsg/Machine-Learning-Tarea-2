@@ -271,37 +271,6 @@
 <div class="article-header-buttons">
 
 
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/2_model_pipeline_cv.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img alt="Colab logo" src="../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
 <a href="https://github.com/RubenEsg/Machine-Learning-Tarea-2" target="_blank"
    class="btn btn-sm btn-source-repository-button"
    title="Repositorio de origen"
@@ -481,7 +450,7 @@
 </tbody>
 </table>
 </div>
-<p>Este notebook es <strong>autocontenido</strong>: se puede ejecutar de principio a fin dentro del repositorio o por separado (en otro computador o en Google Colab). Si no encuentra <code class="docutils literal notranslate"><span class="pre">data/heart.csv</span></code>, descarga el dataset desde el repositorio (o, si no está disponible, directamente desde Kaggle) y verifica su huella SHA-256; si falta alguna librería, la instala.</p>
+<p>Este notebook es <strong>autocontenido</strong>: se puede ejecutar de principio a fin dentro del repositorio o por separado, en otro computador. Si no encuentra <code class="docutils literal notranslate"><span class="pre">data/heart.csv</span></code>, descarga el dataset desde el repositorio (o, si no está disponible, directamente desde Kaggle) y verifica su huella SHA-256; si falta alguna librería, la instala.</p>
 <p>Este notebook entrena el modelo que se despliega en la API. Además de la etapa 2, contiene la exportación del modelo (etapa 3) y el monitoreo de deriva (etapa 6). El análisis exploratorio, la demostración de <em>data leakage</em> y el ranking de los 13 modelos están en el notebook 1 (<code class="docutils literal notranslate"><span class="pre">1_model_leakage_demo.ipynb</span></code>).</p>
 <p><strong>Requisitos del enunciado y dónde se cubren</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -521,7 +490,7 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
-<span class="c1"># Si falta alguna librería (por ejemplo, Evidently en Google Colab), se instala.</span>
+<span class="c1"># Si falta alguna librería (por ejemplo, Evidently), se instala.</span>
 <span class="n">DEPENDENCIAS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"numpy"</span><span class="p">:</span> <span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"pandas"</span><span class="p">:</span> <span class="s2">"pandas"</span><span class="p">,</span> <span class="s2">"scipy"</span><span class="p">:</span> <span class="s2">"scipy"</span><span class="p">,</span> <span class="s2">"sklearn"</span><span class="p">:</span> <span class="s2">"scikit-learn"</span><span class="p">,</span>
                 <span class="s2">"matplotlib"</span><span class="p">:</span> <span class="s2">"matplotlib"</span><span class="p">,</span> <span class="s2">"joblib"</span><span class="p">:</span> <span class="s2">"joblib"</span><span class="p">,</span>
                 <span class="s2">"evidently"</span><span class="p">:</span> <span class="s2">"evidently==0.7.23"</span><span class="p">}</span>

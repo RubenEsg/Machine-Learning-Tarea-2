@@ -271,37 +271,6 @@
 <div class="article-header-buttons">
 
 
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/1_model_leakage_demo.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img alt="Colab logo" src="../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
 <a href="https://github.com/RubenEsg/Machine-Learning-Tarea-2" target="_blank"
    class="btn btn-sm btn-source-repository-button"
    title="Repositorio de origen"
@@ -490,7 +459,7 @@
 </tbody>
 </table>
 </div>
-<p>Este notebook es <strong>autocontenido</strong>: se puede ejecutar de principio a fin dentro del repositorio o por separado (en otro computador o en Google Colab). Si no encuentra <code class="docutils literal notranslate"><span class="pre">data/heart.csv</span></code>, descarga el dataset desde el repositorio (o, si no está disponible, directamente desde Kaggle) y verifica su huella SHA-256; si falta alguna librería, la instala.</p>
+<p>Este notebook es <strong>autocontenido</strong>: se puede ejecutar de principio a fin dentro del repositorio o por separado, en otro computador. Si no encuentra <code class="docutils literal notranslate"><span class="pre">data/heart.csv</span></code>, descarga el dataset desde el repositorio (o, si no está disponible, directamente desde Kaggle) y verifica su huella SHA-256; si falta alguna librería, la instala.</p>
 <p><strong>Requisitos del enunciado para esta etapa y dónde se cubren</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -530,7 +499,7 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
-<span class="c1"># Si falta alguna librería (por ejemplo, al abrir el notebook en Google Colab), se instala.</span>
+<span class="c1"># Si falta alguna librería, se instala.</span>
 <span class="n">DEPENDENCIAS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"numpy"</span><span class="p">:</span> <span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"pandas"</span><span class="p">:</span> <span class="s2">"pandas"</span><span class="p">,</span> <span class="s2">"scipy"</span><span class="p">:</span> <span class="s2">"scipy"</span><span class="p">,</span> <span class="s2">"sklearn"</span><span class="p">:</span> <span class="s2">"scikit-learn"</span><span class="p">,</span>
                 <span class="s2">"matplotlib"</span><span class="p">:</span> <span class="s2">"matplotlib"</span><span class="p">,</span> <span class="s2">"joblib"</span><span class="p">:</span> <span class="s2">"joblib"</span><span class="p">,</span> <span class="s2">"xgboost"</span><span class="p">:</span> <span class="s2">"xgboost"</span><span class="p">}</span>
 <span class="n">faltantes</span> <span class="o">=</span> <span class="p">[</span><span class="n">paquete</span> <span class="k">for</span> <span class="n">modulo</span><span class="p">,</span> <span class="n">paquete</span> <span class="ow">in</span> <span class="n">DEPENDENCIAS</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">importlib</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">find_spec</span><span class="p">(</span><span class="n">modulo</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">]</span>

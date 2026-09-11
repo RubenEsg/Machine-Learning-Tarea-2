@@ -39,7 +39,7 @@ La parte superior es exactamente la estructura del enunciado. Se agregaron cinco
 - **`monitoring/`**: el script de la etapa 6 para lotes nuevos de pacientes.
 - **`docs/`**: el Jupyter Book con el informe.
 
-Los dos notebooks son **autocontenidos**: cada uno define sus funciones, descarga el dataset si no lo encuentra (verificando su huella SHA-256) e instala las librerías que falten, así que se pueden ejecutar fuera del repositorio o en Google Colab. Usan exactamente la misma partición de los datos, y el notebook 2 lo verifica con una huella de los índices de prueba.
+Los dos notebooks son **autocontenidos**: cada uno define sus funciones, descarga el dataset si no lo encuentra (verificando su huella SHA-256) e instala las librerías que falten, así que se pueden ejecutar fuera del repositorio. Usan exactamente la misma partición de los datos, y el notebook 2 lo verifica con una huella de los índices de prueba.
 
 ## Flujo del proyecto
 
