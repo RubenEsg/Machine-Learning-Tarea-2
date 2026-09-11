@@ -161,14 +161,3 @@ El Pipeline completo se exporta a `app/model.joblib` y lo sirve una API FastAPI 
 1. El flujo completo de MLOps pedido en el enunciado quedó implementado y verificado: notebooks reproducibles, API, imagen Docker, manifiestos de Kubernetes, integración continua y monitoreo de deriva.
 2. Con particiones hechas antes de cualquier transformación, preprocesamiento dentro del Pipeline y el conjunto de prueba reservado para reportar, el modelo final alcanza un AUC de 0.928 en pacientes no vistos, coherente con la validación cruzada anidada (0.921).
 3. Los mejores clasificadores son estadísticamente equivalentes en este dataset; el modelo es un apoyo académico que requiere validación externa y no reemplaza el criterio médico.
-
-## Referencias
-
-- DeLong, E. R., DeLong, D. M. y Clarke-Pearson, D. L. (1988). Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. *Biometrics*, 44(3), 837–845.
-- Detrano, R. et al. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. *American Journal of Cardiology*, 64(5), 304–310.
-- fedesoriano (2021). *Heart Failure Prediction Dataset*. Kaggle. https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
-- Janosi, A., Steinbrunn, W., Pfisterer, M. y Detrano, R. (1988). *Heart Disease* [conjunto de datos]. UCI Machine Learning Repository. https://archive.ics.uci.edu/dataset/45/heart+disease
-- Müller, A. C. y Guido, S. (2016). *Introduction to Machine Learning with Python*. O'Reilly Media.
-- Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research*, 12, 2825–2830.
-- Rubio, L. *Machine Learning* [Jupyter Book del curso]. https://lihkir.github.io/MachineLearning/
-- Sun, X. y Xu, W. (2014). Fast implementation of DeLong's algorithm for comparing the areas under correlated receiver operating characteristic curves. *IEEE Signal Processing Letters*, 21(11), 1389–1393.
