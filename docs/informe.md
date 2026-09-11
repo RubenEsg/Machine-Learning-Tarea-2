@@ -5,7 +5,7 @@
 | **Integrantes** | Martínez Pulido Valerie · Basto Martínez Abrahan · Esguerra Fernández Rubén |
 | **Curso** | Machine Learning — Dr. Lihki Rubio |
 | **Entrega** | Tarea 2: proyecto integrador de aprendizaje automático (sección 10.12) |
-| **Notebooks ejecutables** | [1_model_leakage_demo.ipynb](https://github.com/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/1_model_leakage_demo.ipynb) (etapa 1) · [abrir en Colab](https://colab.research.google.com/github/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/1_model_leakage_demo.ipynb) <br> [2_model_pipeline_cv.ipynb](https://github.com/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/2_model_pipeline_cv.ipynb) (etapas 2, 3 y 6) · [abrir en Colab](https://colab.research.google.com/github/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/2_model_pipeline_cv.ipynb) |
+| **Notebooks ejecutables** | [1_model_leakage_demo.ipynb](https://github.com/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/1_model_leakage_demo.ipynb) (etapa 1) <br> [2_model_pipeline_cv.ipynb](https://github.com/RubenEsg/Machine-Learning-Tarea-2/blob/main/notebooks/2_model_pipeline_cv.ipynb) (etapas 2, 3 y 6) |
 | **Repositorio** | [RubenEsg/Machine-Learning-Tarea-2](https://github.com/RubenEsg/Machine-Learning-Tarea-2) (API, Docker, Kubernetes, CI) |
 | **Monitoreo** | [reporte de deriva de datos de Evidently](https://rubenesg.github.io/Machine-Learning-Tarea-2/drift_report.html) |
 

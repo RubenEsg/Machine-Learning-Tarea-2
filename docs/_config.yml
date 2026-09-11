@@ -23,11 +23,6 @@ html:
   use_issues_button: false
   use_edit_page_button: false
 
-# Botón para abrir y ejecutar los notebooks en Google Colab.
-launch_buttons:
-  notebook_interface: "classic"
-  colab_url: "https://colab.research.google.com"
-
 sphinx:
   config:
     language: es
